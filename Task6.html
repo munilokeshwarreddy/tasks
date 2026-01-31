@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technova 2024 Conference</title>                      
+    <style>
+        body{
+            font-family: sans-serif,Arial, Helvetica;margin: 0%;padding: 0%;box-sizing: border-box;
+        }
+        #welcome{
+            padding-top: 40px;
+            text-align: center; 
+            height: 250px;
+            background-color: #f2f2f2;
+            border-bottom:  3px solid rgb(10, 151, 151) ;                 
+        }
+        button{
+            height: 50px;
+            width: 140px;
+            color: white;
+            background-color: rgb(10, 151, 151);
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+        }                                                                    
+        
+        table{          
+        width: 90%;                    
+         border-collapse: collapse;                                     
+         margin: 30px 5%; 
+    }
+    tr{
+        height: 60px;
+       
+    }
+    #Schedule h2{
+        margin:20px  5%  10px 5%;
+    }
+                                                                
+
+    #register{
+        text-align: left;
+    }
+    #navigation{
+        display: flex;justify-content: space-between; background-color: rgb(2, 52, 50);width: 100%;height: 80px;align-items: center;
+         border-bottom:4px solid rgb(21, 21, 21) ;
+    }
+    #navigation ul{
+      display: flex; list-style-type: none;align-items: center;justify-content: center;margin-right: 50px;color: white;
+    }
+    #navigation ul a li{
+        padding: 20px;
+    }
+    #navigation ul a{
+        text-decoration: none; color: white;
+    }
+    #navigation h2{
+      margin-left: 50px; 
+    color: white;}
+    select{
+        width: 90%;
+    }
+    tr:nth-child(1){ 
+        background-color: rgb(2, 87, 93); }
+        tr:nth-child(4){
+            background-color:rgba(228, 228, 23, 0.811);
+    
+        }
+        td{
+            padding-left: 10px;
+        }
+        #tablesch{
+            border-bottom: 1px solid black;height: 450px;
+        }
+       
+       
+
+    </style>                                                                                      
+   
+</head>
+<body>
+    <div id="navigation">
+        <h2><strong>TechNova Logo</strong></h2>
+    
+        <nav><ul>
+        <a href="#schedule"> <li>Schedule</li></a>
+        <a href="#register"> <li>Register</li></a>
+        <a href="#location"> <li>Location</li></a>
+    </ul></nav>
+    </div>
+
+   
+    
+                
+    <div id="welcome">
+        <h2><strong><b>Welcome to TechNova 2024</b></strong></h2>
+
+        <p><strong>Date:</strong>October 12-14, 2024|<strong>Location:</strong>The Grand Innovation Center,Seattle </p>
+
+        <p>Join the world's leading minds in AI,Frontend,and Backend development.</p>
+
+       <button>
+        Get Tickets Now
+       </button>
+    </div>
+        
+        
+                                                                       
+        <div id="tablesch">
+            <div id="Schedule">
+            <h2><strong>|Conference Schedule</strong></h2>
+            <table border="1">
+              
+                <tr>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Speaker</th>
+                <th>Location</th>
+               </tr>
+            
+                              
+                <tr>                                               
+                    <td>09:00 AM</td>
+                    <td>Keynote: The Future of Code</td>
+                    <td>Dr.Smith</td>
+                    <td>Main Hall</td>                   
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>                          
+                    <td>Advanced CSS Grid</td>
+                    <td>Jane Doe</td>
+                    <td>Room A</td>
+                </tr>
+                <tr>
+                    <td><strong>12:00 PM</strong></td>
+                    <td colspan="3"><strong>Networking Lunch Break (Catered)</strong></td>
+                </tr>
+                <tr>                                
+                    <td>01:00 PM</td>
+                    <td>AI Integration</td>
+                    <td>John Bot</td>
+                    <td>Room B</td>                                                       
+                </tr>                                       
+                <tr>
+                    <td colspan="4"><p><em>Note: Schedule subject to change.</em></p></td>
+                </tr>
+              
+
+            </table> 
+        </div>                                   
+            
+
+            <div id="tick">
+                <div id="register">
+                <h2><strong>Register for Tickets</strong></h2>
+                                                                                                                                                                                                                                                    
+                <form action="submit" method="get">
+                    <fieldset>
+                        <legend>Personal Details </legend>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" size="100" placeholder=""><br><br>
+                                                                                                     
+                        <label for="email">Email Address:</label><br>
+                        <input type="text" id="email" size="100" placeholder="you@example.com"><br><br>
+                                                                                                           
+                        <label for="Linkdin">LinkdIn Profile URL:</label><br>
+                        <input type="text" id="Linkdin" size="100" placeholder="https://linkedin.com/in/...."><br><br>
+                                                                                                                                                                                                     
+                    </fieldset>
+
+            </div>
+                    <hr>
+
+                   <div id="size">                                                                                       
+                     <fieldset>                                                                      
+                        <legend >Ticket Preferences</legend>
+                        <label for="T-Shirt Size:">T-Shirt Size</label><br>
+                        <select id="T-Shirt" name="T-Shirt" >
+                            <option>small</option>                                                                                        
+                            <option selected> Medium</option>
+                            <option >Large</option>
+                            <option>XL</option>                                                                                                                                                                                                                                                                                                                                                        
+                        </select>                                                           
+                        <p><strong>Dietary Restrictions:</strong></p><br>
+                        
+                    </fieldset>
+                   </div>
+                                                                                                                                           
+                </form>
+
+            
+            
+        </div>
+        
+      
+</body>
+</html>
