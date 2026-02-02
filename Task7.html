@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and video </title>
+    <style>
+        body{
+            background-color:whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #maincontent{
+            display: flex;flex-direction: column;
+            background-color: rgb(206, 218, 230);
+            width: 100%;
+            
+            padding: 40px 0;
+           
+        } 
+         button{
+            height: 50px;
+            width: 140px;
+            color: white;
+            background-color: rgb(1, 14, 14);
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+        }              
+        #image{
+            display: flex;
+            align-items: center; 
+            gap: 10px;
+             width: 90%;
+             margin:0 5%;  
+             background-color: white; 
+              height: 300px;
+              padding: 0 20px;    
+        }
+        #video{
+             display: flex;
+            align-items: center; 
+            gap: 10px;
+             width: 90%;
+             margin:0 5%;  
+              background-color: white; 
+              height: 300px;
+              padding: 0 20px;
+
+        }
+        .img{
+            width: 100px;
+            height: auto;
+        }
+        .apple {
+           color: red;
+        }
+        .grapes {
+            color: green;
+        }
+        .banana {
+            color:greenyellow;
+        }
+        .cherry {
+            color: rgb(220, 86, 86);
+        }
+
+    </style>
+</head>
+<body>                                                           
+    
+  <div id="maincontent">
+      <div id="image">
+        <img src="https://img.freepik.com/premium-vector/joyous-cartoon-kids-leaping-with-exuberance_1263357-6640.jpg?semt=ais_hybrid&w=740&q=80"  height="200px" width="200px" alt=" my image ">
+      <div id="text">
+        <h2>TEXT WITH LEFT IMAGE</h2>
+      <p>Colorful, creative, and fun, these kids cartoons inspire young imaginations with lively characters and stories.
+         Paired with painting activities,
+          they create engaging educational material that blends learning and play seamlessly.
+          Kids can watch, paint, and learn—all while having a blast!</p>
+    </div>
+    </div>
+    <br>
+                                                                            
+                                                           
+    <div id="video">                                                                                  
+        
+        <div id="text2">                                                              
+            <h2>TEXT WITH RIGHT VIDEO</h2>
+            <p>
+                IShowSpeed (Darren Watkins Jr.) became famous for his chaotic, high-energy, and unpredictable live streams,
+                 blending gaming (like NBA 2K) with viral moments,
+                  meme-worthy outbursts, and a massive, passionate fanbase, especially after his obsession with footballer
+                   Cristiano Ronaldo went global, leading to large international tours and record-breaking viewership.
+            </p> </div>
+           <iframe width="300" height="200" src="https://www.youtube.com/embed/rPU92OL2kyk?si=uXzF5yxP6VUXtZ23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                                  
+    </div>
+
+  </div>
+                                                                                                                                                                              
+
+    <div>
+        <form action="submit" method="get">
+           <fieldset class="forms">
+            <legend class="feedback legend"><strong>CONTACT US</strong></legend>
+            <label for="name">Name of you:</label><br>
+            <input type="text" id="Name" size="100" placeholder="Enter your name"><br>
+            <label for="phone-No">Phone Number:</label><br>
+            <input type="text" id="Phone-No" size="100" placeholder="Enter your Phone-Number"><br>
+            <label for="email-id">Email-id:</label><br>
+            <input type="text" id="Email-Address" size="100" placeholder="Enter your Email-Address"><br>
+             <button type="submit">sumbit</button><br>
+
+           </fieldset>                                           
+        </form>                              
+    </div>
+                                                                                                                                                                                                                         
+    <div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        <form action="submit" method="get">                                     
+            <fieldset class="forms">
+                <legend class="feedback legend"> <strong>School admission form</strong></legend>
+                <label for=" name">Name of Student: </label><br>
+                <input type="text" id="name" size="100" placeholder="Student name"><br>
+                <label for="DOB">Date of Birth:</label><br>
+                <input type="text" id="DOB" size="100" placeholder="Enter your Date of Birth"><br>
+                <label for="name">Parent Name:</label><br>
+                <input type="text" id="name" size="100" placeholder="Name of your parent(Either or Father)"><br>
+                <label for="Contact">Contact Number:</label><br>
+                <input type="text" id="contact-No" size="100" placeholder="Enter your contact-No"><br>
+                <label for="House-Address">House-Address:</label><br>
+                <input type="text" id="House-Address" size="100" placeholder="Enter your House-Address"><br>
+                <button type="submit">sumbit</button><br>
+
+            </fieldset>
+        </form>
+    </div>                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    <div>                                               
+        <form action="submit" method="get">                    
+            <fieldset class="forms">
+                <legend class="feedback legend"> <strong>Event Registration form</strong></legend>
+                <label for="Event Name">Event Name:</label><br>
+                <input type="text" id="Event name" size="100" placeholder="Enter Event name"><br>
+                <label for=" name"> participant Name: </label><br>
+                <input type="text" id="name" size="100" placeholder="Enter participant Name"><br>
+                <label for="AGE">Enter your age:</label><br>
+                <input type="number" min="18" max="99"> <br>
+                <label for="phone-No">Phone Number:</label><br>
+                <input type="text" id="Phone-No" size="100" placeholder="Enter your Phone-Number"><br><br>
+                <label for="payment"> Payment status:</label><br>
+                <input type="checkbox" id="paid" > <label for="paid">paid</label>
+                <input type="checkbox" id="pending"> <label for="pending">pending</label><br>
+                <button type="submit">sumbit</button>                              
+                                                                               
+            </fieldset>
+        </form>                                                                  
+    </div>
+                                                                                              
+    <div>                                                                                  
+        <form action="submit" method="get">
+            <fieldset class="forms">
+                <legend class="feedback legend"><strong>Customer feedback form</strong></legend>
+                <label for="name">Name of you:</label><br>
+                <input type="text" id="Name" size="100" placeholder="Enter your name"><br>
+                <label for="email-id">Email-id:</label><br>
+                <input type="text" id="Email-Address" size="100" placeholder="Enter your Email-Address"><br>
+                <label for="Rating">Give your Rating:</label>
+                <input type="number" id="Rating " min="1" max="5"><br>
+                <label for="Customer">Customer Specification:</label><br>
+                <input type="checkbox" id="Good"> <label for="Good">Good</label>
+                <input type="checkbox" id="Bad"> <label for="Bad">Bad</label><br>
+                <label for="comments">give your comments</label>
+                <textarea name="commnets" id="comments" cols="30" rows="20" ></textarea><br>            
+                <button type="submit">sumbit</button>
+
+            </fieldset>
+        </form>
+    </div>
+     
+ <div id="fruits">
+        <div>
+            <h2>fruits:</h2>
+            <ul>
+                <li class="apple">apple</li>
+                <li class="grapes">grapes</li>
+                <li class="banana">banana</li>
+                <li class="cherry">cherry</li>
+            </ul>
+        </div>
+    </div>
+
+   
+
+
+</body>
+</html>
