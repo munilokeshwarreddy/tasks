@@ -1,0 +1,145 @@
+<!DOCTYPE html>                               
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBrand</title>
+    <style>
+        body{
+            font-family: sans-serif,Arial, Helvetica;margin: 0%;padding: 0%;box-sizing: border-box;
+        }                                                                                                                                             
+        #brand{                                             
+            display: flex;                                                       
+            justify-content: space-between;
+            background-color: black;
+            width: 100%;
+            height: 80px;
+            align-items: center;
+        }                                                                                                                                                
+        #brand h2{                                                                               
+            color: white;
+            margin-left: 50px;
+        }                                                                                                    
+        #brand ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 50px;
+            list-style-type: none;
+        }                                                                                                                                                                    
+        #brand ul a{
+            color: white;
+            text-decoration: none;
+
+        }                                                                                                                                                                                                                       
+        #brand ul a li{
+            padding: 20px;
+        }                                                                                                                                                                                                                     
+        #first{
+            text-align: center;
+            padding-top: 40px;
+            height: 250px;
+
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        button{
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+        
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        .card{
+            height: 150px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+             align-items: center;
+             border: none; 
+             background-color: white;  
+             box-shadow: 0 0 5px rgba(0, 0, 0, 0.521); 
+             
+        }                                                                                                                                                                                                                                                           
+
+        #cardbox{
+            height: 250px;
+            width:100% ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: lightgray;
+        }                                                                                                                                                                                                                                                                                                        
+        footer{
+            width: 100%;
+            height: 200px;
+            border: none;
+            background-color: lightgray;
+
+        }                                                                                                                                                                                            
+        #footercontent{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;                                          
+        }                                                                          
+    </style>
+</head>
+<body>                                                           
+
+    <div id="brand">
+        <h2><strong>MyBrand</strong></h2>
+
+        <nav>
+            <ul>
+               <a href="#Home"> <li>Home</li></a>
+               <a href="#Services"> <li>Services</li></a>
+               <a href="#Contact"> <li>Contact</li></a>
+            </ul>
+        </nav>
+
+    </div>
+                   
+    <div id="first">
+        <h1><strong>Grow Your Business</strong></h1>
+        <p><small>Simple Websites Using HTML and CSS</small></p>
+
+        <button>
+            Get Started                                               
+        </button>
+
+    </div>
+
+    <section id="cardbox">
+        <div class="card">
+            <h2>Design</h2>
+            <p>Clean UI Using basic CSS</p>
+
+        </div>
+        <div class="card">
+            <h2>Development</h2>
+            <p>Structured HTML pages</p>
+                                               
+        </div>                                                                                                                                                                                     
+        <div class="card">
+            <h2>Support</h2>
+            <p>Beginner friendly help</p>
+        </div>
+    </section>                                                                    
+                                                                                                                                                     
+    <footer>                                                                                                                                                                          
+        <div id="footercontent">
+            <p>&copy;2026 MyBrand</p>
+        </div>                                                         
+    </footer>
+    
+</body>
+</html>
