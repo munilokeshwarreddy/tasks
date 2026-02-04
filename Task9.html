@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnPro</title>
+    <style>
+        body{
+            font-family: sans-serif,Arial, Helvetica;margin: 0%;padding: 0%;box-sizing: border-box;
+        }    
+        #first{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            width: 100%;
+           background-color: #1d283a;
+        }
+        #first h2{
+            color: white;
+            margin-left: 50px;
+        }
+        #first ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+            color: white;
+            list-style-type: none;
+        }
+        #first ul a{
+            color: white;
+            text-decoration: none;
+        }
+        #first ul a li{
+            padding: 20px;
+        }
+        #second{
+            text-align: center;
+            padding-top: 40px;
+            height: 250px;
+            background-color: lightgray;
+        }
+        #explore{
+            height: 50px;
+            width: 130px;
+            cursor: pointer;
+            color: white;
+            background-color: #1d283a ;
+            border: none;
+            font-size: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .card{
+            height: 160px;
+            width: 300px;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: none;
+            
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.521);
+            
+
+        }
+        #cardbox{
+            height: 300px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+        .course{
+            display: flex;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+        .course .card .view{
+            height: 50px;
+            width: 130px;
+            cursor: pointer;
+            background-color: #1d283a ;
+            color: white;
+            margin-top: 10px;
+            font-size: 14.5px;
+            border: none;
+           
+        }
+        #third{
+            text-align: center;
+            background-color:lightgray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #box{
+            
+            background-color: #f9fafc;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        footer{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color:  #1d283a;
+        }
+       #footercontent{
+        color: white;
+        height: 80px;
+       }
+       .four{
+        background-color: rgb(239, 221, 221);
+        width: 500px;
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        <h2><strong>LearnPro</strong></h2>
+
+
+        <nav>
+            <ul>
+                <a href="#Home"><li>Home</li></a>
+                <a href="#Courses"><li>Courses</li></a>
+                <a href="#About"><li>About</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="second">
+        <h1><strong>Build Your Career in Tech</strong></h1>
+
+        <p><small>Learn Web Development,DevOps and Cyber Security from scratch.</small></p>
+
+        <button id="explore">
+            Explore Courses
+        </button>
+
+    </div>
+
+    <section id="cardbox">
+        <h2><b>Our Popular Courses</b></h2>
+
+       <div class="course">
+         <div class="card">
+            <h3>Web Development</h3>
+            <p>HTML,CSS,JavaScript with<br>projects.</p>
+                
+               <small>Beginner</small>
+                <button class="view">
+                    View Course
+                </button>
+
+            </div> 
+
+        <div class="card">
+            <h3>DevOps basics</h3>
+            <p>Linux,Git,CI/CD <br> fundamentals.</p>
+
+            <small>Intermediate</small>
+            <button class="view">
+                View Course
+            </button>
+
+        </div>
+
+        <div class="card">
+            <h3>Cyber Security</h3>
+            <p>Security fundamentals for <br> freshers.</p>
+
+            <small>Beginner</small>
+            <button class="view">
+                View Course
+            </button>
+
+        </div>
+
+
+         </div>
+
+    </section>
+
+    <div id="third">
+        <h2><strong>Why Learn With Us</strong></h2>
+       <p>Beginner-friendly learning</p>
+       <p>Hands-on projects</p>
+       <p>Carrer-focused roadmap</p>
+       <p>Free learning resources</p>
+
+    </div>
+
+   <section id="box">
+    <h2>What Students Say</h2>
+    <div class="four">
+        <p>"Very clear explanations and practical approach."</p>
+               <p><b>-Ankit,Fresher</b></p>
+    </div>
+
+    <div class="four">
+        <p>"Helped me start my web development journey."</p>
+        <p><b>-Priya,Student</b></p>
+
+    </div>
+   </section>
+
+    <footer>                                                                                                                                                                          
+        <div id="footercontent">
+            <p>Contact:learnpro@gmail.com</p>
+            <p>&copy;2026 LearnPro.All rights reserved.</p>
+        </div>                                                         
+    </footer>
+    
+    
+</body>
+</html>
