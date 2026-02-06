@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+             margin: 0;
+            padding: 0;
+        }
+        .members{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: none;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+        .row-1{
+            display: flex;
+            gap: 20px;
+            margin-top: 35px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            object-fit: cover;
+            height: 460px;
+            width: auto;
+           
+        }
+        .row-2{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: auto;
+            object-fit: cover;
+            height: 460px;
+            width: auto;
+        }
+        
+        .team{
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            padding: 50px 10px;
+        }
+        
+        h1{
+        position: relative;
+        padding-bottom: 15px;
+        color: rgb(17, 17, 17);
+        font-size: 35px;
+       
+       }
+       h1::after{
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65px;
+        height: 4px;
+        background-color: #f39c12;
+        border-radius: 2pc;
+       }
+       h1::before{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 160px;
+        height: 2px;
+        background-color: #a4a2a2;
+       }
+       .one{
+        width: 200px;
+        height: 380px;
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 15px;
+        border-radius: 10px; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+        
+       }
+       .one img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: #d0a16c;
+        overflow: hidden;
+        object-fit: cover;
+       
+       }
+       .title{
+        color: #f39c12;
+        background-color: #e4c1aa85;
+        padding: 5px 10px;
+        border-radius: 50px;
+       }
+       .iconscontainer{
+        display: flex;
+        gap: 15px;
+
+       }
+       .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+
+       }
+       .logo img{
+        height: 35px;
+        width: 35px;
+        
+       }
+      
+
+    </style>
+</head>
+<body>
+    <div class="team">
+        <h1>Team</h1>
+       
+        <p>
+            Cricket is a bat-and-ball game that is played between two teams of eleven players on a field.
+        </p>
+
+    </div>                                   
+
+    <div class="members">
+        
+       <div class="row-1">
+               <div class="one">
+            <img src="https://s.ndtvimg.com/images/entities/300/ms-dhoni-700.png"  alt="Dhoni">
+            <h3><b>M.S Dhoni</b> </h3>
+            <p class="title">Captain cool</p>
+           <p>legendary Indian cricketer and captain, .  </p>
+            <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+               
+             </div>
+
+            <div class="one">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8HpDrYnaODtnghczDBs0f4Nalq_chptAbA&s" alt="kohli">
+            <h3><b>King-kohli</b></h3>
+            <p class="title"> King-kohli</p>
+            <p> legendary Indian cricketer and former captain, . </p>
+               <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+
+
+             </div>
+             <div class="one">
+            <img src="https://s.ndtvimg.com/images/entities/300/rohit-sharma-857.png"  alt="sachin">
+            <h3><b>Rohit-sharma</b> </h3>
+            <p class="title">leading India to victory</p>
+           <p>No matter how talented you are or naturally gifted you are.  </p>
+           <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+            </div>
+
+             <div class="one">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBc8l_HFAh65Ka4D6h3b_M6K9203dWjc0NcA&s" alt="Sureshraina">
+            <h3><b>Hardikpandya</b></h3>
+            <p class="title">Kunfy-Pandya</p>
+            <p>prominent Indian international cricketer and all-rounder </p>
+            <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+             </div>
+
+        </div>
+    
+    <div class="row-2">
+         <div class="one">
+            <img src="https://s.ndtvimg.com/images/entities/300/kannaur-lokesh-rahul_636964748675838598.png"  alt="sachin">
+            <h3><b>KL Rahul</b> </h3>
+            <p class="title">Classy player</p>
+           <p>KL Rahul (Kannanur Lokesh Rahul) is a prominent Indian international cricketer. </p>
+           <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+        </div>
+
+        <div class="one">
+            <img src="https://s.ndtvimg.com/images/entities/300/suresh-raina-722.png" alt="Sureshraina">
+            <h3><b>Suresh-raina</b></h3>
+            <p class="title">Mr.IPL</p>
+            <p>Suresh Raina  "Mr. IPL" and "Chinna Thala". </p>
+            <div class="iconscontainer">
+                <div class="logo"><img src="https://c8.alamy.com/comp/2T9WJB5/linkedin-design-logo-sign-symbol-vector-in-american-business-and-employment-oriented-online-service-operates-via-website-and-mobile-apps-social-media-2T9WJB5.jpg" alt=""></div>
+                <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkCpv6fJZ_2Tx-GLLFLMTNDySZEqUyPxD6g&s" alt=""></div>
+                <div class="logo"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_user_personalization&w=740&q=80" alt="">
+                </div>
+                </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
