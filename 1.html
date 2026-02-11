@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>winter</title>
+    <style>  
+                       
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(135deg, rgb(250, 251, 252) 0%, rgb(232, 244, 248) 100%)
+        }
+         
+        #first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            color: #004080;
+            letter-spacing: 0.15em; 
+            cursor: pointer;
+        }
+        #first ul{
+             display: flex; 
+             align-items: center;
+             justify-content: space-between;
+             list-style-type: none;
+             margin-right: 50px;
+             color: white;     
+        }
+
+        #first ul a {
+            text-decoration: none;
+        }
+        #first ul a li {
+            padding: 20px;
+        }
+        .main{
+            text-align: center;
+            margin-top: 150px;
+            position: relative;
+            width: 100%;
+            height: 80vh;
+        }
+        .mainheading{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(232,244 ,248 ,0.874);
+            z-index: 1;
+        }
+        .background {background: url(https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80);
+             background-repeat: no-repeat;
+            background-position: center 25%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+          animation: motion 15s infinite ease;
+         animation-direction: normal;
+        }
+        @keyframes motion{
+            0%,30%{
+                background: url(https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80); background-position: center 30%;}
+            33%,60%{background: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1600&q=80);
+            background-position: center 50%;}
+            63%,100%{background: url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1600&q=80);background-position: center;}
+        }
+        .main h1{
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #00264d;
+        }
+        .main p{
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            color: #336699;
+        }
+       
+         .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #004080;
+            letter-spacing: 0.15em; 
+            cursor: pointer;
+        }
+        .menu ul{
+             display: flex; 
+             align-items: center;
+             justify-content: center;
+             list-style-type: none;
+            
+             color: rgba(255, 255, 255, 0.795);
+        }
+        .menu ul a {
+            text-decoration: none;
+        }
+        .menu ul a li {
+            padding: 20px;
+        }
+        .about{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background-color:#f0f7f9;
+            width: 100;
+        }
+        .about-text{
+            margin-right: 20px;
+        }
+        .about-text h1{
+           text-align: center;
+            margin-bottom: 15px;
+            font-size: 45px;
+            justify-content: center;
+            color: #7ba8bd;
+        }
+        .about-text p{
+            margin-bottom: 15px;
+            color: #333
+        }
+        .about-image{
+            text-align: center;
+        }
+        .about-image img{
+         width: 400px;
+         height: 400px;
+         margin-top: 0;
+        }
+        .experience{
+            display: flex;
+            gap: 40px;
+            background-color: white;
+            height: 120px;  
+                               
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px 40px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.324);      
+        }
+        .box h2{
+            display: flex;
+            font-size:20px;
+            margin: 0;
+            color:#e79653;
+        }
+        .box p{
+            font-size: 17px;
+            color:rgb(92, 177, 177) ;
+        
+        }
+        .contact{
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f7f9;
+            font-size: large;
+        }
+        .contact h2{
+            font-size: 25px;
+           margin-bottom: 10px;
+           color: #333;
+
+        }
+        .contact p{
+            font-size: 19px;
+            color: #708787;
+            margin-bottom: 30px;
+        }
+        .info{
+           max-width: 600px;
+           margin:  auto;
+           text-align: left;
+        }
+        .info button{
+            background-color:#4a5f6d;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 40px;
+            width: 100%;
+        }
+        .info button:hover{
+            transition: 0.3s ease;
+            background-color: #7fb3f0;
+        }
+         footer{
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            color: #333;
+         }
+         .end{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 60px;
+            font-size: 20px;
+            background-color: #e9f5f8;
+            color: #777;
+         }                    
+        
+         .copy{
+            margin-top: 15px;
+            font-size: 13px;
+            color: #777777;
+            background-color:#e9f5f8 ;
+         }
+         
+         nav li{
+            text-decoration: none;
+            transition: all 0.3s ease;
+         }
+         nav li:hover{
+            transform:scale(1.1);
+         }
+         h2{
+            text-decoration: none;
+            transition: all 0.3s ease;
+         }
+         h2:hover{
+             transform:scale(1.1);
+         }
+         .box{
+             text-decoration: none;
+            transition: all 0.3s ease;
+            
+         }
+         .box:hover{
+             transform:scale(1.1);
+         }
+         .gallery{
+            height: 350px;
+            width:250px ;
+            position: relative;
+            overflow: hidden;
+           
+         }
+         .photos{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            margin-top: 10px;
+         }
+         .photos img{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 10px;
+            
+         }
+         .over{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color:rgb(249, 249, 249);
+            transform:translateY(100%);
+            transition: transform 2s ease;
+            padding: 20px;
+
+         }
+         .gallery:hover .over{
+            transform: translateY(0%);
+         }
+         .gallery:hover .photos{
+            transform: scale(1.1);
+            transition: transform 2s ease;
+         }
+         .one{
+            display: flex;
+            width: 80%;
+            height: fit-content;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+         }
+         .two{
+            display: flex;
+            width: 80%;
+             height: fit-content;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            align-content: center;
+            
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div id="first">
+         <h2><span>&#10054 </span>WINTER</h2>
+        <nav>
+            <ul>
+              <a href="#HOME"><li>&#10054HOME</li></a>
+                <a href="#GALLERY"><li>&#10054GALLERY</li></a>
+                <a href="#ABOUT"><li>&#10054ABOUT</li></a>                                  
+                <a href="#CONTACT"><li>&#10054CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+      </div>
+
+     <section class="main">
+        <div class="background"></div>
+       <div class="mainheading">
+         <h1>Winter Moments</h1>
+        <p>A COLLECTION OF FROZEN BEAUTY</p>
+        
+
+       </div>
+
+     </section>
+
+     <div class="menu">
+       <nav>
+         <ul>
+            <a href="#ALL"><li>ALL</li></a>
+            <a href="LANDSCAPES"><li>LANDSCAPES</li></a>
+            <a href="DECORATIONS"><li>DECORATIONS</li></a>
+            <a href="FOOD"><li>FOOD</li></a>
+            <a href="FAMILY"> <li>FAMILY</li></a>
+        </ul>
+       </nav>
+     </div>
+
+
+       <div class="one">
+        <div class="gallery">
+         <div class="photos">
+            <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=80" alt="">
+        </div>
+         <div class="over">
+            <h2>Mountain snow</h2>
+            <p>Landscapes</p>
+         </div>
+       </div>
+    
+              <div class="gallery">
+                 <div class="photos">
+                    <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80" alt="">
+                 </div>
+                 <div class="over">
+                    <h2>Frozen Lake</h2>
+                    <p>Landscapes</p>
+                 </div>
+              </div>
+    
+       
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Snowy Path</h2>
+                <p>Landscapes</p>
+            </div>
+        </div>        
+       
+        
+
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Winter forest</h2>
+                <p>Landscapes</p>
+            </div>
+        </div>
+        </div>
+
+      <div class="two">
+        
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Ornament Detail</h2>
+                <p>Decortions</p>
+            </div>
+        </div>
+
+        
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Holiday Lights</h2>
+                <p>Decortions</p>
+            </div>
+        </div>
+
+        
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Gift Wrapping</h2>
+                <p>Decortions</p>
+            </div>
+        </div>
+      </div>
+
+
+       <div class="two">
+         <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Winter Warmth</h2>
+                <p>Food</p>
+            </div>
+        </div>
+
+
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Festive treats</h2>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Cozy Drinks</h2>
+                <p>Food</p>
+            </div>
+        </div>
+       </div>
+
+
+      <div class="one">
+          <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Family Joy</h2>
+                <p>Family</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="photos">
+                <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80" alt="">
+            </div>
+            <div class="over">
+                <h2>Winter Together</h2>
+                <p>Family</p>
+            </div>
+        </div>
+      </div>
+        
+            
+       <section class="about">
+        <div class="about-text">
+            <h1>About</h1>
+            <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade.
+                 Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness 
+                 that blankets the world during the coldest months.</p>
+                 <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth,
+                     my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter—the 
+                     way light dances on ice crystals, the cozy comfort of holiday gatherings,
+                     and the breathtaking landscapes transformed by snow.</p>
+                     <p>My photography has been featured in various publications and exhibitions,
+                         and I continue to explore new ways to capture the essence of winter's wonder.</p>
+        </div>
+
+           <div class="about-image">
+        <img src="data:image/jpeg;base64,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"  width="350px" height="400px" alt="">
+           </div>
+           </section>
+
+          <div class="experience">               
+             <div class="box">
+            <h2>10+</h2>
+            <p>YEARS EXPERIENCE</p>
+
+           </div>
+           <div class="box">
+            <h2>500+</h2>
+            <p>PHOTOS CAPTURED</p>
+           </div>
+
+          </div>
+
+          <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Let's work together to capture your winter moments</p>
+
+
+            <form class="info">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" placeholder="" size="100" ><br>
+
+                <label for="email">EMAIL</label><br>
+                <input type="text" id="EMAIL" size="100" placeholder=""><br>
+                
+                <label for="message">MESSAGE</label><br>
+                <textarea name="message" id="message" rows="10"></textarea><br>
+
+                <button class="button">
+                    Send Message
+  
+                </button>
+
+            </form>
+          </section>
+
+
+        <footer>
+            <div class="details">
+                <p>id="email-id"><span>📧</span><a href="mailto:abc@gmail.com">hello@winterportfolio.com</a></p>
+                <p> id="phone"><span>📱</span><a href="tei:+911234567890">+1 (555) 123-4567</a></p>
+                <p> id="location"><span>📍</span><a href="https://www.google.com/maps/search/?api=1&query=Colorado+USA">Colorado, USA</a></p>
+
+            </div>
+            <div class="copyrights">
+                <p>&copy;2026 Winter Portfolio. Designed by TooPlate</p>
+
+            </div>
+        </footer>  
+</body>
+</html>
